@@ -4,7 +4,7 @@ const products = [
   {
     _id: '1',
     name: 'Emerald Illusion',
-    image: '/images/emerald-illusion.jpeg',
+    image: '/images/emerald-illusion.jpg',
     description: faker.commerce.productDescription,
     category: 'Acrylic on canvas',
     price: 150.00,
@@ -15,7 +15,7 @@ const products = [
   {
     _id: '2',
     name: 'Fighting the Dark',
-    image: '/images/fighting-the-dark.jpeg',
+    image: '/images/fighting-the-dark.jpg',
     description: faker.commerce.productDescription,
     category: 'Acrylic on canvas',
     price: 150.00,
@@ -25,19 +25,19 @@ const products = [
   },
   {
     _id: '3',
-    name: 'Galactic Art',
-    image: '/images/galactic-art.jpeg',
+    name: 'Galactic Heart',
+    image: '/images/galactic-heart.jpg',
     description: faker.commerce.productDescription,
     category: 'Acrylic on canvas',
     price: 150.00,
     countInStock: 1,
-    rating: 5.0,
+    rating: 4.0,
     numReviews: 4
   },
   {
     _id: '4',
     name: 'Inner Sanctum',
-    image: '/images/inner-sanctum.jpeg',
+    image: '/images/inner-sanctum.jpg',
     description: faker.commerce.productDescription,
     category: 'Acrylic on canvas',
     price: 150.00,
@@ -48,7 +48,7 @@ const products = [
   {
     _id: '5',
     name: 'Practitioner',
-    image: '/images/practitioner.jpeg',
+    image: '/images/practitioner.jpg',
     description: faker.commerce.productDescription,
     category: 'Acrylic on canvas',
     price: 150.00,
@@ -57,14 +57,14 @@ const products = [
     numReviews: 4
   },
   {
-    _id: '5',
+    _id: '6',
     name: 'Primordial',
-    image: '/images/primordial.jpeg',
+    image: '/images/primordial.jpg',
     description: faker.commerce.productDescription,
     category: 'Acrylic on canvas',
     price: 150.00,
     countInStock: 1,
-    rating: 5.0,
+    rating: 4.5,
     numReviews: 4
   }
 ]
