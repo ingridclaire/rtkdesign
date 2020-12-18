@@ -8,7 +8,7 @@ import Message from '../components/Message'
 import { listProductDetails } from '../actions/productActions'
 
 const ProductScreen = ({ history, match }) => {
-  const [qty, setQty] = useState(0);
+  const [qty, setQty] = useState(1);
 
   const dispatch = useDispatch()
 
@@ -33,10 +33,10 @@ const ProductScreen = ({ history, match }) => {
         <Message variant="danger">{error}</Message>
       ): (
       <Row>
-        <Col md={6}>
+        <Col className='product-page-section' md={6}>
           <Image src={product.image} alt={product.name} fluid />
         </Col>
-        <Col md={3}>
+        <Col className='product-page-section' md={3}>
           <ListGroup variant="flush">
             <ListGroup.Item>
               <h2>{product.name}</h2>
@@ -55,21 +55,21 @@ const ProductScreen = ({ history, match }) => {
             </ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col md={3}>
+        <Col className='product-page-section' md={3}>
           <Card>
             <ListGroup variant="flush">
               <ListGroup.Item>
                 <Row>
-                  <Col>Price:</Col>
-                  <Col>
+                  <Col className='product-page-section'>Price:</Col>
+                  <Col className='product-page-section'>
                     <strong>${product.price}</strong>
                   </Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
-                  <Col>Status:</Col>
-                  <Col>
+                  <Col className='product-page-section'>Status:</Col>
+                  <Col className='product-page-section'>
                     <strong>{product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}</strong>
                   </Col>
                 </Row>
@@ -77,11 +77,13 @@ const ProductScreen = ({ history, match }) => {
               {product.countInStock > 0 && (
                 <ListGroup.Item>
                   <Row>
-                    <Col>Qty</Col>
-                    <Col>
+                    <Col className='product-page-section'>Qty</Col>
+                    <Col className='product-page-section'>
                       <Form.Control as='select' value={qty} onChange={(e) => setQty(e.target.value)}>
                         {[...Array(product.countInStock).keys()].map(x => (
-                          <option key={x + 1} value={x + 1}>{x + 1}</option>
+                          <option key={x + 1} value={x + 1}>
+                            {x + 1}
+                          </option>
                         ))}
                       </Form.Control>
                     </Col>

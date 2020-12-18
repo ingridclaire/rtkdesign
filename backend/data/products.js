@@ -7,7 +7,7 @@ const products = [
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
     price: 150.00,
-    countInStock: 0,
+    countInStock: 5,
     rating: 5.0,
     numReviews: 4
   },
@@ -17,7 +17,7 @@ const products = [
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
     price: 150.00,
-    countInStock: 1,
+    countInStock: 5,
     rating: 5.0,
     numReviews: 4
   },
@@ -27,7 +27,7 @@ const products = [
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
     price: 150.00,
-    countInStock: 1,
+    countInStock: 5,
     rating: 4.0,
     numReviews: 4
   },
@@ -37,7 +37,7 @@ const products = [
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
     price: 150.00,
-    countInStock: 1,
+    countInStock: 5,
     rating: 5.0,
     numReviews: 4
   },
@@ -47,7 +47,7 @@ const products = [
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
     price: 150.00,
-    countInStock: 1,
+    countInStock: 5,
     rating: 5.0,
     numReviews: 4
   },
@@ -57,7 +57,7 @@ const products = [
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
     price: 150.00,
-    countInStock: 1,
+    countInStock: 5,
     rating: 4.5,
     numReviews: 4
   }
