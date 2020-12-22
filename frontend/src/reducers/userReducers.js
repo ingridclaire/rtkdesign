@@ -7,12 +7,14 @@ import {
 
 export const userLoginReducer = (state = {}, action) => {
     switch (action.type) {
-      case PRODUCT_LIST_REQUEST:
-        return { loading: true, products: [] }
-      case PRODUCT_LIST_SUCCESS:
-        return { loading: false, products: action.payload }
-      case PRODUCT_LIST_FAIL:
+      case USER_LOGIN_REQUEST:
+        return { loading: true }
+      case USER_LOGIN_SUCCESS:
+        return { loading: false, userInfo: action.payload }
+      case USER_LOGIN_FAIL:
         return { loading: false, error: action.payload }
+      case USER_LOGOUT:
+        return {}
       default:
         return state
     }
