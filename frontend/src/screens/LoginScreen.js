@@ -20,6 +20,7 @@ const LoginScreen = ({ location, history }) => {
     const redirect = location.search ? location.search.split('=')[1] : '/'
 
     useEffect(() => {
+        console.log('location.search = ', location.search)
         if(userInfo) {
             history.push(redirect)
         }
