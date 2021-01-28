@@ -14,7 +14,7 @@ const PlaceOrderScreen = () => {
   }
   cart.itemsPrice = addDecimals(cart.cartItems.reduce((total, item) => total + item.price * item.qty, 0));
   cart.shippingPrice = addDecimals(cart.itemsPrice > 100 ? 0 : 100);
-  cart.taxPrice = addDecimals(0.15 * cart.itemsPrice)
+  cart.taxPrice = addDecimals(0.06 * cart.itemsPrice)
   cart.totalPrice = (Number(cart.itemsPrice) + Number(cart.shippingPrice) + Number(cart.taxPrice)).toFixed(2);
 
 
