@@ -1,5 +1,3 @@
-import { bindActionCreators } from "redux";
-
 import {
   PRODUCT_LIST_REQUEST,
   PRODUCT_LIST_SUCCESS,
