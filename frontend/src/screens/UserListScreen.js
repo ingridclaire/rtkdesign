@@ -6,7 +6,7 @@ import Message from '../components/Message';
 import Loader from '../components/Loader';
 import { listUsers, deleteUser } from '../actions/userActions'
 
-const UserList = ({history}) => {
+const UserListScreen = ({history}) => {
   const dispatch = useDispatch();
   const userList = useSelector(state => state.userList);
   const { loading, error, users } = userList;
@@ -58,7 +58,7 @@ const UserList = ({history}) => {
                   )}
                 </td>
                 <td>
-                  <LinkContainer to={`/user/${user._id}/edit`}>
+                  <LinkContainer to={`/admin/user/${user._id}/edit`}>
                     <Button variant='light' className='btn-sm'>
                       <i className='fas fa-edit'></i>
                     </Button>
@@ -76,4 +76,4 @@ const UserList = ({history}) => {
   )
 }
 
-export default UserList
+export default UserListScreen;
