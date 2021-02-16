@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap';
+import { Row, Col, ListGroup, Image, Card } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { PayPalButton } from 'react-paypal-button-v2';
@@ -21,12 +21,12 @@ const OrderScreen = ({ match }) => {
   const orderPay = useSelector(state => state.orderPay);
   const { loading:loadingPay, success:successPay } = orderPay;
 
-  if(!loading) {
-    const addDecimals = (num) => {
-      return (Math.round(num * 100) / 100).toFixed(2)
-    }
+  // if(!loading) {
+  //   const addDecimals = (num) => {
+  //     return (Math.round(num * 100) / 100).toFixed(2)
+  //   }
 
-  }
+  // }
   
   useEffect(() => {
     const addPayPalScript = async () => {
