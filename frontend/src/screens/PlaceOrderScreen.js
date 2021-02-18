@@ -27,7 +27,7 @@ const PlaceOrderScreen = ({ history }) => {
       history.push(`/order/${order._id}`)
       console.log('redirect to order id screen')
     }
-  }, [history, success, order._id])
+  }, [history, success])
 
   const placeOrderHandler = () => {
     dispatch(createOrder({
