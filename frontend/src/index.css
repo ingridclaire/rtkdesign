@@ -19,6 +19,32 @@ h2 {
   padding: 0.5rem;
 }
 
+/*carouself */
+.carousel-container {
+  height: 20rem;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+.carousel-caption h2 {
+  color: #fff;
+}
+.carousel img {
+  height: 15rem;
+  padding: 3rem;
+  margin: 4rem;
+  border-radius: 50%;
+}
+.carousel a {
+  margin: 0 auto;
+}
+
 /* @media only screen and (min-width: 768px) and (max-width: 1200px) {
 
   .product-page-section {
