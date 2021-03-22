@@ -10,6 +10,7 @@ import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
 import emailRoutes from './routes/emailRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
+import serverless from 'serverless-http';
 
 const PORT = process.env.PORT || 5000;
 
@@ -51,6 +52,9 @@ if(process.env.NODE_ENV === 'production') {
 
 app.use(notFound)
 app.use(errorHandler)
+app.use('/.netlify/functions/server', productRoutes)
 
-
-app.listen(PORT, console.log(`server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold));
+const handler = { handler: serverless(app) };
+export { app };
+export { handler };
+// app.listen(PORT, console.log(`server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold));
