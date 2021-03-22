@@ -26,13 +26,6 @@ const OrderScreen = ({ match, history }) => {
 
   const userLogin = useSelector(state => state.userLogin);
   const { userInfo } = userLogin;
-
-  // if(!loading) {
-  //   const addDecimals = (num) => {
-  //     return (Math.round(num * 100) / 100).toFixed(2)
-  //   }
-
-  // }
   
   useEffect(() => {
     if(!userInfo) {
@@ -60,7 +53,7 @@ const OrderScreen = ({ match, history }) => {
       }
     }
 
-}, [dispatch, orderId, successPay, order, successDeliver])
+}, [dispatch, orderId, successPay, order, successDeliver, history, userInfo])
 
 const successPaymentHandler = (paymentResult) => {
   console.log(paymentResult);

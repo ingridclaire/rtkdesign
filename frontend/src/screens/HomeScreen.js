@@ -7,8 +7,6 @@ import Loader from '../components/Loader';
 import Message from '../components/Message';
 import Paginate from '../components/Paginate';
 import { listProducts } from '../actions/productActions';
-import sunMoonLoader from '../51672-sun-and-moon-switch.json';
-import LottieLoader from 'react-lottie-loader';
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
