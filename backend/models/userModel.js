@@ -19,6 +19,11 @@ const userSchema = mongoose.Schema({
     type: Boolean,
     required: true,
     default: false
+  },
+  receiveTexts: {
+    type: Boolean,
+    required: false,
+    default: false
   }
 }, {
   timestamps: true

@@ -6,60 +6,42 @@ const products = [
     image: '/images/emerald-illusion.jpg',
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
-    price: 150.00,
-    countInStock: 5,
-    rating: 5.0,
-    numReviews: 4
+    price: 299.00,
+    countInStock: 1,
+    rating: 0,
+    numReviews: 0
   },
   {
     name: 'Fighting the Dark',
     image: '/images/fighting-the-dark.jpg',
     description: faker.lorem.paragraph(),
-    category: 'Acrylic on canvas',
-    price: 150.00,
+    category: 'Print Only',
+    price: 100.00,
     countInStock: 5,
-    rating: 5.0,
-    numReviews: 4
+    rating: 0,
+    numReviews: 0
   },
-  {
-    name: 'Galactic Heart',
-    image: '/images/galactic-heart.jpg',
-    description: faker.lorem.paragraph(),
-    category: 'Acrylic on canvas',
-    price: 150.00,
-    countInStock: 5,
-    rating: 4.0,
-    numReviews: 4
-  },
+
   {
     name: 'Inner Sanctum',
     image: '/images/inner-sanctum.jpg',
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
-    price: 150.00,
-    countInStock: 5,
-    rating: 5.0,
-    numReviews: 4
+    price: 299.00,
+    countInStock: 1,
+    rating: 0,
+    numReviews: 0
   },
-  {
-    name: 'Practitioner',
-    image: '/images/practitioner.jpg',
-    description: faker.lorem.paragraph(),
-    category: 'Acrylic on canvas',
-    price: 150.00,
-    countInStock: 5,
-    rating: 5.0,
-    numReviews: 4
-  },
+
   {
     name: 'Primordial',
     image: '/images/primordial.jpg',
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
-    price: 150.00,
-    countInStock: 5,
-    rating: 4.5,
-    numReviews: 4
+    price: 299.00,
+    countInStock: 1,
+    rating: 0,
+    numReviews: 0
   }
 ]
 

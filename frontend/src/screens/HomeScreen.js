@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
 import Meta from '../components/Meta';
@@ -7,8 +6,9 @@ import Product from '../components/Product';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
 import Paginate from '../components/Paginate';
-import ProductCarousel from '../components/ProductCarousel';
 import { listProducts } from '../actions/productActions';
+import sunMoonLoader from '../51672-sun-and-moon-switch.json';
+import LottieLoader from 'react-lottie-loader';
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
@@ -26,9 +26,7 @@ const HomeScreen = ({ match }) => {
   return (
     <>
     <Meta />
-    {!keyword ? <ProductCarousel /> : (
-      <Link to='/' className='btn btn-light'>Go Back</Link>
-    )}
+  
       <h1>Current Work</h1>
       {loading ? (
       <Loader />

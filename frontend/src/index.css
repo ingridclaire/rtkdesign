@@ -1,3 +1,21 @@
+#root {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#logo-design {
+  font-family: 'Nothing You Could Do', cursive;
+  text-transform: none;
+}
+
+#prints-available {
+  /* background-color: #4bbf73; */
+  text-align: center;
+}
+
+#message-ryan {
+  color: blue;
+}
+
 main {
   min-height: 80vh;
 }
@@ -45,6 +63,16 @@ h2 {
   margin: 0 auto;
 }
 
+.card:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  text-decoration: none; }
+
+
+.card:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
 /* @media only screen and (min-width: 768px) and (max-width: 1200px) {
 
   .product-page-section {
@@ -53,5 +81,11 @@ h2 {
 
   .product-page-section:nth-child(9) {
     margin: 20px 0 0 50%;
+  }
+} */
+
+/* @media (min-width: 576px) {
+  .ml-sm-5, .mx-sm-5 {
+  margin-left: 0;
   }
 } */
