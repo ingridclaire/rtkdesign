@@ -1,7 +1,7 @@
 {
   "name": "commerce-frontend",
   "type": "module",
-  "proxy": "http://127.0.0.1:5000",
+  "proxy": "https://ryantkelseydesign.herokuapp.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
