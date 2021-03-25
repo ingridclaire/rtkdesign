@@ -3,7 +3,7 @@ import faker from 'faker';
 const products = [
   {
     name: 'Emerald Illusion',
-    image: '/images/emerald-illusion.jpg',
+    image: 'https://rtkdesign.s3.us-east-2.amazonaws.com/emerald-illusion.jpg',
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
     price: 299.00,
@@ -13,7 +13,7 @@ const products = [
   },
   {
     name: 'Fighting the Dark',
-    image: '/images/fighting-the-dark.jpg',
+    image: 'https://rtkdesign.s3.us-east-2.amazonaws.com/fighting-the-dark.jpg',
     description: faker.lorem.paragraph(),
     category: 'Print Only',
     price: 100.00,
@@ -24,7 +24,7 @@ const products = [
 
   {
     name: 'Inner Sanctum',
-    image: '/images/inner-sanctum.jpg',
+    image: 'https://rtkdesign.s3.us-east-2.amazonaws.com/inner-sanctum.jpg',
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
     price: 299.00,
@@ -35,7 +35,7 @@ const products = [
 
   {
     name: 'Primordial',
-    image: '/images/primordial.jpg',
+    image: 'https://rtkdesign.s3.us-east-2.amazonaws.com/primordial.jpg',
     description: faker.lorem.paragraph(),
     category: 'Acrylic on canvas',
     price: 299.00,
