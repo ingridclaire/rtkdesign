@@ -5,8 +5,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server-local.js",
-    "server": "nodemon backend/server-local.js --watch",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js --watch",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seed",
