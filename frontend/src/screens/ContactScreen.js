@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import FormContainer from '../components/FormContainer';
-import Loader from '../components/Loader';
 import Message from '../components/Message';
 import {
   Form, Button
