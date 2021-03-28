@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import path from 'path';
+import newrelic from 'newrelic';
 import morgan from 'morgan';
 import cors from 'cors';
 import colors from 'colors'
