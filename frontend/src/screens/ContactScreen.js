@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FormContainer from '../components/FormContainer';
 import Message from '../components/Message';
+import ReCAPTCHA from "react-google-recaptcha";
 import {
   Form, Button
 } from "react-bootstrap";
@@ -15,6 +16,7 @@ const ContactScreen = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [phone, setPhone] = useState('');
+  const [captcha, setCaptcha] = useState('')
 
   const emailSend = useSelector(state => state.emailSend)
   const { error, loading, success } = emailSend;
@@ -101,6 +103,7 @@ const ContactScreen = () => {
             name="message"
           />
         </Form.Group>
+        <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY} onChange={(value) => setCaptcha(value)} />
         <Button type="submit" variant="primary" style={{fontSize: '1.2rem'}}>{loading ? 'Sending...' : 'Send'}</Button>
    
       </Form>
