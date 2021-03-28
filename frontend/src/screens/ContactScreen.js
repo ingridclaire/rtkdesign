@@ -33,15 +33,20 @@ const ContactScreen = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(sendEmailContent({
-      name,
-      email
-    }))
-    dispatch(sendAdminEmail({
-      name,
-      email,
-      message
-    }))
+    if(captcha.length > 0) {
+
+      dispatch(sendEmailContent({
+        name,
+        email
+      }))
+      dispatch(sendAdminEmail({
+        name,
+        email,
+        message
+      }))
+    } else {
+      alert('please complete required information');
+    }
   }
   return (
     <FormContainer>
